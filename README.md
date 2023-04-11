@@ -57,7 +57,9 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
-
+```
+sudo docker-compose exec web python manage.py loaddata fixtures.json
+```
 
 Проект будет доступен локально по адресу:
 
@@ -83,3 +85,13 @@ python manage.py fill_db
 
 По адресу http://127.0.0.1:8000/redoc/ подключена документация, в которой
 описаны все примеры обращений к API
+
+### Авторы:
+
+Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)     
+Трофимов Руслан - [https://github.com/EdmondKoko](https://github.com/EdmondKoko)   
+Чабанный Денис - [https://github.com/DociDog](https://github.com/DociD
+
+### контейнеризация:
+
+Погодин Глеб - [https://github.com/GlebPogod1n](https://github.com/GlebPogod1n)
